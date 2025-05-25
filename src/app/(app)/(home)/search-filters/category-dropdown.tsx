@@ -7,10 +7,10 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { SubCategoryMenu } from "./subcategory-menu";
 import { useDropdownPosition } from "./use-dropdown-position";
-import { CustomCategory } from "../types";
+import { CategoriesGetManyOutput } from "@/modules/categories/types";
 
 interface Props {
-  category: CustomCategory;
+  category: CategoriesGetManyOutput[1];
   isActive?: boolean;
   isNavigationHovered?: boolean;
 }
